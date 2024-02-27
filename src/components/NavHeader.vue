@@ -17,9 +17,9 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                   <div class="navbar-nav">
-                    <a class="nav-link" href="#">Inicio</a>
-                    <a class="nav-link" href="#">Nosotros</a>
-                    <a class="nav-link" href="#">Contáctanos</a>
+                    <a class="nav-link options" href="#">Inicio</a>
+                    <a class="nav-link options" href="#">Nosotros</a>
+                    <a class="nav-link options" href="#">Contáctanos</a>
                   </div>
                 </div>
               </div>
@@ -33,7 +33,7 @@
         <div class="row">
           <ul class="nav col-12 justify-content-end" style="align-items: center;">
             <li class="ms-3"><a href="">
-                <img height="80" style=""
+                <img id="navimage" height="80" style=""
                   src="https://www.creativefabrica.com/wp-content/uploads/2021/03/20/Mountain-logo-Design-Graphics-9785421-1-580x435.png"
                   alt="">
               </a>
@@ -70,4 +70,29 @@ p {
   margin-top: 8px !important;
   margin-right: 46px !important;
 }
+
+.options{
+  border-radius: 100px;
+}
+.options:hover {
+      background-color: antiquewhite;
+      color: black !important;
+}
+
+#navimage:hover{
+  animation: sacudir 0.5s ease 1;
+}
+
+
+
+
+@keyframes sacudir {
+      0% { transform: translateX(0); }
+      25% { transform: translateX(-3px) rotate(-3deg); }
+      50% { transform: translateX(3px) rotate(3deg); }
+      75% { transform: translateX(-3px) rotate(-3deg); }
+      100% { transform: translateX(0); }
+    }
+
+
 </style>

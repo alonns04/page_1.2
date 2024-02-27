@@ -1,6 +1,6 @@
 <script setup>
 import NavHeader from './NavHeader.vue';
-import ImagesHeader from './ImagesHeader.vue';
+import HeaderImages from './HeaderImages.vue';
 
 
 </script>
@@ -8,7 +8,7 @@ import ImagesHeader from './ImagesHeader.vue';
 
 <template>
   <NavHeader/>
-  <ImagesHeader/>
+  <HeaderImages/>
 </template>
 
 <style scoped>
